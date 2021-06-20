@@ -1,1 +1,29 @@
+class Main {
+  public static void main(String[] args) {
+    
+    int hour = 20;
+    int minute = 50;
+    int second = 13;
 
+    int seconds = (hour*3600+minute*60+second);
+    System.out.print("Seconds since midnight: ");
+    System.out.println(seconds);
+    int secondsleft = (86400-seconds);
+    System.out.print("Seconds remaining in day: ");
+    System.out.println(secondsleft);
+    double percent = (seconds*100)/86400;
+    System.out.print("Percentage of the day that has passed:");
+    System.out.println(percent + "%");
+
+    int hour1 = 21;
+    int minute1 = 40;
+    int second1 = 10;
+
+    int seconds1 = (hour1*3600+minute1*60+second1);
+    System.out.println("The current time: " + seconds1);
+    int time = (seconds1-seconds);
+    System.out.println("Time elapsed:" + time);
+
+
+  }
+}
